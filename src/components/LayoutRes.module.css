@@ -1,0 +1,33 @@
+.food {
+  width: 60vw;
+  margin: auto;
+}
+.food > div {
+  box-shadow: 1px 1px 10px;
+}
+.food > div div:nth-child(1) {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.food > div div:nth-child(2) {
+  margin-bottom: 10px;
+}
+.food > div div span:nth-child(2) {
+  margin: 0 10px;
+}
+.food > div div img {
+  width: 100%;
+}
+.food > div div span p,
+.food > div div span h2,
+.food > div div span h3 {
+  margin: 0.2rem;
+}
+.food > div div span h2 {
+  color: brown;
+}
+.food > div div span h3 {
+  background-color: green;
+}

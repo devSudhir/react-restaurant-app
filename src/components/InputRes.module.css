@@ -1,0 +1,19 @@
+.makeFormCenter {
+  width: 35vw;
+  box-shadow: 2px 2px 20px;
+  margin: auto;
+}
+.makeFormCenter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  justify-content: center;
+}
+.makeFormCenter form input {
+  width: 70%;
+  padding: 10px;
+  margin: 5px;
+  display: block;
+}
