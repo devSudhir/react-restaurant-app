@@ -13,18 +13,19 @@ export function ShowRestDetails() {
   };
   const sortByAsc = () => {
     console.log("asc");
-    let upDateRest = restDetails.Restaurant.sort((a, b) => {
-      return a.costForOne - b.costForOne;
-    });
-    console.log("asc", upDateRest);
-    setRest(upDateRest);
+    setRest(() => [
+      ...restDetails.Restaurant.sort((a, b) => {
+        return a.costForOne - b.costForOne;
+      })
+    ]);
   };
   const sortByDsc = () => {
     console.log("dsc");
-    let upDateRest = restDetails.Restaurant.sort((a, b) => {
-      return b.costForOne - a.costForOne;
-    });
-    setRest(upDateRest);
+    setRest(() => [
+      ...restDetails.Restaurant.sort((a, b) => {
+        return b.costForOne - a.costForOne;
+      })
+    ]);
   };
   const sortByCash = () => {
     let upDateRest = restDetails.Restaurant.filter((ele) =>
